@@ -4,7 +4,7 @@
 }
 
 .i-left{
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .i-intro{
@@ -62,7 +62,7 @@
 }
 
 .i-right{
-    flex: 1;
+    flex: 4;
 }
 
 .i-img{
