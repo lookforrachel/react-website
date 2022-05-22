@@ -1,3 +1,30 @@
+@import "../../global.scss";
+
 .portfolio{
-    background-color: aqua;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        margin-top: 150px;
+        font-size: 50px; 
+    }
+    
+    ul{
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        li{
+            font-size: 14px;
+            margin-right: 50px;
+            padding: 0.7;
+
+            &.active{
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
 }
