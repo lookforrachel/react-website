@@ -1,6 +1,7 @@
 import "./topbar.scss"
 import Logo from "../../img/RY_favicon.png"
 import {Mail, GitHub, LinkedIn, Twitter} from "@material-ui/icons"
+// import React, { useState } from "react"
 
 export default function Topbar({menuOpen, setMenuOpen}) {
   return (
