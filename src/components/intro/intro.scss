@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .intro-container{
     // background: center center/cover no-repeat;
     height: 100vh;
@@ -8,22 +11,45 @@
     color: white;
     justify-content: center;
     margin: 0 10vw;
-    position: relative;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     img{
         object-fit: cover;
         width: 100%;
         height: 100vh;
         position: fixed;
-        z-index: -1
+        z-index: -1;
     }
 
-    > p{
-        margin-top: 200px;
-        font-size: 30px;
-        font-weight: 500;
-        backdrop-filter: blur(3px);
-        mix-blend-mode: inherit;
+    .desc-container{
+        > p{
+            margin-top: 200px;
+            font-size: 30px;
+            font-weight: 500;
+            backdrop-filter: blur(3px);
+            mix-blend-mode: inherit;
+
+            @include mobile{
+                margin-top: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .downWrapper{
+        margin-top: 50px;
+        position: absolute;
+        bottom: 50px;
+
+        .MuiSvgIcon-root{
+            color: white;
+            width: 50px;
+            height: 50px;
+        }
     }
     
     button{
@@ -42,22 +68,12 @@
     button:hover{
         background: rgba(52, 52, 52, 1);
     }
-    .downWrapper{
-        position: absolute;
-        bottom: 50px;
-
-        .MuiSvgIcon-root{
-            color: white;
-            width: 50px;
-            height: 50px;
-        }
-    }
-
 }
 
 .i{
     display: flex;
     height: 100vh;
+    position: relative;
 }
 
 .i-left{

@@ -13,7 +13,9 @@ const Intro = () => {
         <div className="i" id="intro">
             <div className="intro-container">
                 <img src={Me} alt=""/>
-                <p>I’m a curious and passionate,  self-taught developer with extensive design experience. I love breaking down complex problems and believe in solving them with empathy and user-centricity. I’m a fast learner, team player and love a good challenge.</p>
+                <div className="desc-container">
+                    <p>I’m a curious and passionate,  self-taught developer with extensive design experience. I love breaking down complex problems and believe in solving them with empathy and user-centricity. I’m a fast learner, team player and love a good challenge.</p>
+                </div>
                 <div className="downWrapper">
                         <a href="#portfolio"><KeyboardArrowDown className="icon"/></a>
                 </div>
