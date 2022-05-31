@@ -68,6 +68,10 @@
                 &:focus{
                     outline: none;
                 }
+
+                &:hover{
+                    background-color:firebrick;
+                }
             }
             
             span{
