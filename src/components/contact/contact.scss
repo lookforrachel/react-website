@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact{
-    background-color:steelblue;
+    background-color:beige;
     display: flex;
     overflow: hidden;
 
@@ -58,7 +58,7 @@
                 width: 150px;
                 height: 30px;
                 color: white;
-                background-color: crimson;
+                background-color: rgb(252, 67, 178);
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
@@ -70,7 +70,7 @@
                 }
 
                 &:hover{
-                    background-color:firebrick;
+                    background-color:rgb(207, 55, 149);
                 }
             }
             

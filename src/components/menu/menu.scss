@@ -36,8 +36,14 @@
             }
             &:hover{
                 font-weight: 500;
+                color: $accentColor;
+                
             }
         }
+    }
+
+    @include screen{
+        display: none;
     }
 
 }

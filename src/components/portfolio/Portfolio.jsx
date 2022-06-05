@@ -1,7 +1,7 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList.jsx";
 import MidiController from "../../img/MIDIController.png";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { featuredPortfolio, graphicsPortfolio, webPortfolio, devPortfolio, miscPortfolio } from "../../data";
 
 export default function Portfolio() {
@@ -52,14 +52,18 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {list.map((item) => (
-            <PortfolioList 
-            title={item.title} 
-            active={selected === item.id} 
-            setSelected={setSelected}
-            id={item.id}
-            />
-          ))}
+        {
+          React.Children.toArray(
+            list.map((item) => (
+              <PortfolioList 
+              title={item.title} 
+              active={selected === item.id} 
+              setSelected={setSelected}
+              id={item.id}
+              />
+            ))
+          )
+        }
       </ul>
       <div className="container">
         {data.map(d=>(

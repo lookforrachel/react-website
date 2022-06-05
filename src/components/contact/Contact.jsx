@@ -1,7 +1,5 @@
 import { useState } from "react";
-// import React, { useRef} from 'react'
 import "./contact.scss";
-// import { send } from "emailjs-com";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
