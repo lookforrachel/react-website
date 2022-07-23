@@ -31,17 +31,17 @@ function Topbar() {
           <a href="#intro" className="logo"><img src={Logo} alt=""/></a>
           <div className="iconWrapper">
             <div className="itemContainer">
-                <a href="mailto: lookfor.rachel@gmail.com"><Mail className="icon"/></a>
+                <a href="mailto: lookfor.rachel@gmail.com" target="_blank" rel="noreferrer noopener"><Mail className="icon"/></a>
                 {/* <span>lookfor.rachel@gmail.com</span> */}
             </div>
             <div className="itemContainer">
-                <a href="https://github.com/lookforrachel"><GitHub className="icon"/></a>
+                <a href="https://github.com/lookforrachel" target="_blank" rel="noreferrer noopener"><GitHub className="icon"/></a>
             </div>
             <div className="itemContainer">
-                <a href="https://www.linkedin.com/in/lookforrachel/"><LinkedIn className="icon"/></a>
+                <a href="https://www.linkedin.com/in/lookforrachel/" target="_blank" rel="noreferrer noopener"><LinkedIn className="icon"/></a>
             </div>
             <div className="itemContainer">
-                <a href="https://twitter.com/lookforrachel"><Twitter className="icon"/></a>
+                <a href="https://twitter.com/lookforrachel" target="_blank" rel="noreferrer noopener"><Twitter className="icon"/></a>
             </div>
         </div>
         </div>
